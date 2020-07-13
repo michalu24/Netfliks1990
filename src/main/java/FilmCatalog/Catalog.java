@@ -60,6 +60,12 @@ public class Catalog {
             cell3.setCellStyle(mainStyle);
             sheet1.autoSizeColumn(2);
 
+
+            HSSFCell cell4 = row.createCell(3);
+            cell4.setCellValue("Status");
+            cell4.setCellStyle(mainStyle);
+            sheet1.autoSizeColumn(3);
+
         }
 
 
