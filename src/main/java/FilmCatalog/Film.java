@@ -25,7 +25,7 @@ public class Film {
         return description;
     }
 
-    private Film() {
+    public Film() {
     }
 
     public static class Builder {

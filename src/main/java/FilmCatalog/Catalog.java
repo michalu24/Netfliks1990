@@ -49,22 +49,15 @@ public class Catalog {
             HSSFCell cell = row.createCell(0);
             cell.setCellValue("Tytuł filmu");
             cell.setCellStyle(mainStyle);
-            sheet1.autoSizeColumn(0);
 
-            HSSFCell cell2 = row.createCell(1);
-            cell2.setCellValue("Rodzaj filmu");
+            HSSFCell cell1 = row.createCell(1);
+            cell1.setCellValue("Opis");
+            cell1.setCellStyle(mainStyle);
+
+
+            HSSFCell cell2 = row.createCell(2);
+            cell2.setCellValue("Status");
             cell2.setCellStyle(mainStyle);
-
-            HSSFCell cell3 = row.createCell(2);
-            cell3.setCellValue("Opis");
-            cell3.setCellStyle(mainStyle);
-            sheet1.autoSizeColumn(2);
-
-
-            HSSFCell cell4 = row.createCell(3);
-            cell4.setCellValue("Status");
-            cell4.setCellStyle(mainStyle);
-            sheet1.autoSizeColumn(3);
 
         }
 
