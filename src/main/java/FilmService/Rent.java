@@ -17,4 +17,11 @@ public class Rent {
         System.out.println("________________");
         PresentData.ofFilmGenreCatalog(FilmGenre.GENRE_FAMILY);
     }
+
+    public static void horrorFilm() {
+        System.out.println("CHOSE YOUR FILM:");
+        System.out.println("________________");
+        PresentData.ofFilmGenreCatalog(FilmGenre.GENRE_HORROR);
+
+    }
 }
