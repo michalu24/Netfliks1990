@@ -2,13 +2,7 @@ package FilmService;
 
 import FilmCatalog.FilmGenre;
 import Formating.PresentData;
-import org.apache.poi.ss.usermodel.*;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Iterator;
 
 public class Rent {
 
@@ -16,12 +10,37 @@ public class Rent {
         System.out.println("CHOSE YOUR FILM:");
         System.out.println("________________");
         PresentData.ofFilmGenreCatalog(FilmGenre.GENRE_FAMILY);
+
     }
 
     public static void horrorFilm() {
         System.out.println("CHOSE YOUR FILM:");
         System.out.println("________________");
         PresentData.ofFilmGenreCatalog(FilmGenre.GENRE_HORROR);
+
+    }
+    public static void comedyFilm() {
+        System.out.println("CHOSE YOUR FILM:");
+        System.out.println("________________");
+        PresentData.ofFilmGenreCatalog(FilmGenre.GENRE_COMEDY);
+
+    }
+    public static void adventureFilm() {
+        System.out.println("CHOSE YOUR FILM:");
+        System.out.println("________________");
+        PresentData.ofFilmGenreCatalog(FilmGenre.GENRE_ADVENTURE);
+
+    }
+    public static void dramaFilm() {
+        System.out.println("CHOSE YOUR FILM:");
+        System.out.println("________________");
+        PresentData.ofFilmGenreCatalog(FilmGenre.GENRE_DRAMA);
+
+    }
+    public static void sciFiFilm() {
+        System.out.println("CHOSE YOUR FILM:");
+        System.out.println("________________");
+        PresentData.ofFilmGenreCatalog(FilmGenre.GENRE_SCIFI);
 
     }
 }
