@@ -7,7 +7,6 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
@@ -30,6 +29,7 @@ public class PresentData {
 
                         Row row = rowIterator.next();
                         if (row.getRowNum() == 0) continue;
+                        else if (row.getCell(2).getStringCellValue().equalsIgnoreCase("ZAJĘTY")) continue;
 
                         System.out.println("_____________________________________________");
                         System.out.println("Numer "+row.getRowNum());
@@ -41,8 +41,6 @@ public class PresentData {
 
                     }
 
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -59,6 +57,7 @@ public class PresentData {
 
                         Row row = rowIterator.next();
                         if (row.getRowNum() == 0) continue;
+                        else if (row.getCell(2).getStringCellValue().equalsIgnoreCase("ZAJĘTY")) continue;
 
                         System.out.println("_____________________________________________");
                         System.out.println("Numer "+row.getRowNum());
@@ -70,8 +69,6 @@ public class PresentData {
 
                     }
 
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -88,6 +85,7 @@ public class PresentData {
 
                         Row row = rowIterator.next();
                         if (row.getRowNum() == 0) continue;
+                        else if (row.getCell(2).getStringCellValue().equalsIgnoreCase("ZAJĘTY")) continue;
 
                         System.out.println("_____________________________________________");
                         System.out.println("Numer "+row.getRowNum());
@@ -99,8 +97,6 @@ public class PresentData {
 
                     }
 
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -117,6 +113,7 @@ public class PresentData {
 
                         Row row = rowIterator.next();
                         if (row.getRowNum() == 0) continue;
+                        else if (row.getCell(2).getStringCellValue().equalsIgnoreCase("ZAJĘTY")) continue;
 
                         System.out.println("_____________________________________________");
                         System.out.println("Numer "+row.getRowNum());
@@ -128,8 +125,6 @@ public class PresentData {
 
                     }
 
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -146,6 +141,7 @@ public class PresentData {
 
                         Row row = rowIterator.next();
                         if (row.getRowNum() == 0) continue;
+                        else if (row.getCell(2).getStringCellValue().equalsIgnoreCase("ZAJĘTY")) continue;
 
                         System.out.println("_____________________________________________");
                         System.out.println("Numer "+row.getRowNum());
@@ -157,8 +153,6 @@ public class PresentData {
 
                     }
 
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -175,6 +169,8 @@ public class PresentData {
 
                         Row row = rowIterator.next();
                         if (row.getRowNum() == 0) continue;
+                        else if (row.getCell(2).getStringCellValue().equalsIgnoreCase("ZAJĘTY")) continue;
+
 
                         System.out.println("_____________________________________________");
                         System.out.println("Numer "+row.getRowNum());
@@ -186,8 +182,6 @@ public class PresentData {
 
                     }
 
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
